@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from "./components/navbar";
 import { Outlet } from "react-router-dom";
-import Posts from "./components/posts";
+//import Posts from "./components/posts";
 
 function App() {
 	return (
