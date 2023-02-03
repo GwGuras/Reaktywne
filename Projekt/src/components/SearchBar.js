@@ -15,7 +15,6 @@ class SearchBar extends Component {
 		if (!this.input.current.value.trim()) {
 			return;
 		}
-		//this.props.dispatch(searchMovies(this.input.current.value));
 		this.input.current.value = '';
 	}
 
@@ -23,7 +22,7 @@ class SearchBar extends Component {
 		return (
 			<div>
 				<form onSubmit={this.handleSubmit} class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Tytuł filmu" aria-label="Search" ref={this.input} />
+					<input class="form-control me-2" type="search" placeholder="Tytuł filmu" ref={this.input} />
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
 				</form>
 			</div>
